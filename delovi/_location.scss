@@ -1,0 +1,55 @@
+.location {
+  .location-items {
+    display: flex;
+    @include responsive(tablet) {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    @include responsive(mobilni) {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .location-item {
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include responsive(tablet) {
+        flex: 0 0 100%;
+      }
+      @include responsive(mobilni) {
+        flex: 0 0 100%;
+      }
+      h3 {
+        color: $litegreen-color;
+        @include responsive(mobilni) {
+          margin-top: 1rem;
+        }
+        @include responsive(tablet) {
+          margin-top: 2rem;
+        }
+      }
+      p {
+        padding: 1rem 4rem;
+        text-align: justify;
+        @include responsive(mobilni) {
+          padding: 2rem 2rem;
+        }
+        @include responsive(tablet) {
+          padding: 2rem 2rem;
+        }
+      }
+    }
+  }
+  .location-items:nth-of-type(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    @include responsive(mobilni) {
+      flex-direction: column-reverse;
+    }
+    @include responsive(tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+}

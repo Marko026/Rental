@@ -1,0 +1,52 @@
+footer {
+  background: linear-gradient(90deg, rgb(224, 187, 65, 0.8), rgba(252, 224, 139, 0.596)), url(img/footer.jpg);
+  background-position-y: 55%;
+  background-position-x: 37%;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    padding: 2rem 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    @include responsive(desktop) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    input {
+      padding: 1rem;
+      border: none;
+      @include responsive(desktop) {
+        margin-right: 1rem;
+      }
+      @include responsive(tablet) {
+        margin: 2rem 1rem;
+        flex: 0 0 25%;
+      }
+      @include responsive(mobilni) {
+        margin: 2rem 1rem;
+        flex: 0 0 25%;
+      }
+    }
+    button {
+      background-color: $litegreen-color;
+      border: 2px solid transparent;
+      color: $white-color;
+      padding: 1rem 2.5rem;
+
+      @include responsive(tablet) {
+        margin: 1rem 1rem;
+        flex: 0 0 25%;
+      }
+      @include responsive(mobilni) {
+        margin: 1rem 1rem;
+        flex: 0 0 25%;
+      }
+    }
+  }
+}

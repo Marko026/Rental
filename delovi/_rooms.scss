@@ -1,0 +1,33 @@
+.rooms-section {
+  display: flex;
+  text-align: center;
+  @include responsive(tablet) {
+    flex-wrap: wrap;
+  }
+  article {
+    @include responsive(tablet) {
+      flex: 0 0 50%;
+    }
+    img {
+      border-bottom: 5px solid $yellow-color;
+    }
+    h4 {
+      background-color: $bck-color;
+      padding: 1rem;
+      color: $white-color;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      @include responsive(mobilni) {
+        font-size: 1.8rem;
+      }
+      @include responsive(mali) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  article:nth-of-type(even) {
+    h4 {
+      background-color: $litegreen-color;
+    }
+  }
+}

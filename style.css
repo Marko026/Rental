@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/*font-family: 'Roboto', sans-serif;*/
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+p {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* Header*/
+header {
+  background-color: rgb(42, 65, 75);
+}
+header .container {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 568px) {
+  header .container {
+    flex-direction: column;
+  }
+}
+header .container .logo a {
+  color: #e6b517;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+header .container .logo a:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\e065";
+  margin-left: 0.7rem;
+}
+@media screen and (max-width: 568px) {
+  header .container .logo {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  header .container .logo {
+    margin-bottom: 0.5rem;
+  }
+}
+header .container .social a {
+  font-size: 2.4rem;
+  color: rgb(228, 228, 228);
+  margin-left: 1.5rem;
+}
+@media screen and (max-width: 568px) {
+  header .container .social {
+    padding-right: 1.8rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  header .container .social {
+    padding-right: 1.8rem;
+    font-size: 2rem;
+  }
+}
+header nav {
+  padding: 1rem 0;
+  margin: auto;
+  background-color: white;
+}
+header nav ul {
+  list-style: none;
+  text-align: center;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #4ec493;
+  padding-left: 1rem;
+}
+header nav ul li a:hover {
+  color: rgb(42, 65, 75);
+}
+
+/* hero section*/
+.hero-section {
+  height: 70vh;
+  background-image: url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .hero {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(90deg, rgba(77, 199, 148, 0.6) 100%, rgb(77, 199, 148) 100%);
+  border: 1px solid white;
+}
+@media screen and (max-width: 992px) {
+  .hero-section .hero {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .hero-section .hero {
+    max-width: 80%;
+  }
+}
+.hero-section .hero h1 {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+@media screen and (min-width: 993px) {
+  .hero-section .hero h1 {
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-section .hero h1 {
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .hero-section .hero h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .hero-section .hero h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+.hero-section .hero p {
+  color: rgb(228, 228, 228);
+  padding: 1rem 0;
+}
+@media screen and (min-width: 993px) {
+  .hero-section .hero p {
+    font-size: 3rem;
+    line-height: 6.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero-section .hero p {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  .hero-section .hero p {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .hero-section .hero p {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+}
+.hero-section .hero a {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #e6b517;
+}
+
+/* About Section*/
+.section-about {
+  height: 70vh;
+  background-image: linear-gradient(90deg, rgba(77, 199, 148, 0.6) 100%, rgb(77, 199, 148) 100%), url(img/onama.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-about .about-us {
+  text-align: center;
+  flex-basis: 80%;
+}
+.section-about .about-us h2 {
+  color: white;
+}
+.section-about .about-us p {
+  color: rgb(228, 228, 228);
+}
+
+/*section rooms*/
+.rooms-section {
+  display: flex;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .rooms-section {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 992px) {
+  .rooms-section article {
+    flex: 0 0 50%;
+  }
+}
+.rooms-section article img {
+  border-bottom: 5px solid #e6b517;
+}
+.rooms-section article h4 {
+  background-color: rgb(42, 65, 75);
+  padding: 1rem;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 568px) {
+  .rooms-section article h4 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .rooms-section article h4 {
+    font-size: 1.5rem;
+  }
+}
+.rooms-section article:nth-of-type(even) h4 {
+  background-color: #4ec493;
+}
+
+/*Location*/
+.location .location-items {
+  display: flex;
+}
+@media screen and (max-width: 992px) {
+  .location .location-items {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 568px) {
+  .location .location-items {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+.location .location-items .location-item {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .location .location-items .location-item {
+    flex: 0 0 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .location .location-items .location-item {
+    flex: 0 0 100%;
+  }
+}
+.location .location-items .location-item h3 {
+  color: #4ec493;
+}
+@media screen and (max-width: 568px) {
+  .location .location-items .location-item h3 {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .location .location-items .location-item h3 {
+    margin-top: 2rem;
+  }
+}
+.location .location-items .location-item p {
+  padding: 1rem 4rem;
+  text-align: justify;
+}
+@media screen and (max-width: 568px) {
+  .location .location-items .location-item p {
+    padding: 2rem 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .location .location-items .location-item p {
+    padding: 2rem 2rem;
+  }
+}
+.location .location-items:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 568px) {
+  .location .location-items:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 992px) {
+  .location .location-items:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+}
+
+/*Footer*/
+footer {
+  background: linear-gradient(90deg, rgba(224, 187, 65, 0.8), rgba(252, 224, 139, 0.596)), url(img/footer.jpg);
+  background-position-y: 55%;
+  background-position-x: 37%;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer p {
+  padding: 2rem 0;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 993px) {
+  footer form {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+footer form input {
+  padding: 1rem;
+  border: none;
+}
+@media screen and (min-width: 993px) {
+  footer form input {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer form input {
+    margin: 2rem 1rem;
+    flex: 0 0 25%;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer form input {
+    margin: 2rem 1rem;
+    flex: 0 0 25%;
+  }
+}
+footer form button {
+  background-color: #4ec493;
+  border: 2px solid transparent;
+  color: white;
+  padding: 1rem 2.5rem;
+}
+@media screen and (max-width: 992px) {
+  footer form button {
+    margin: 1rem 1rem;
+    flex: 0 0 25%;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer form button {
+    margin: 1rem 1rem;
+    flex: 0 0 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
